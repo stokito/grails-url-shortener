@@ -1,0 +1,12 @@
+.project
+.settings
+*.iml
+*.ipr
+*.iws
+*.zip
+target
+*.log
+/target
+.idea
+plugin.xml
+dependencies.groovy
