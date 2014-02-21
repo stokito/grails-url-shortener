@@ -25,7 +25,12 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.5'
     }
 	plugins {
+        provided ':webxml:1.4.1'
 		runtime ':rest:0.8'
+
+        build(':release:2.2.1', ':rest-client-builder:1.0.3') {
+            export = false
+        }
 	}
 	grails.project.dependency.distribution = {
 		portal id: "beta", url: "http://beta.grails.org/plugin/"
