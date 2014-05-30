@@ -1,3 +1,8 @@
+grails.project.repos.default = 'bintray-stokito-maven-grails-url-shortener'
+grails.project.repos.'bintray-stokito-maven-grails-url-shortener'.url = 'https://api.bintray.com/maven/stokito/maven/grails-url-shortener'
+grails.project.repos.'bintray-stokito-maven-grails-url-shortener'.type = 'maven'
+grails.project.repos.'bintray-stokito-maven-grails-url-shortener'.portal = 'stokitoBintray'
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
@@ -32,8 +37,4 @@ grails.project.dependency.resolution = {
             export = false
         }
 	}
-	grails.project.dependency.distribution = {
-		portal id: "beta", url: "http://beta.grails.org/plugin/"
-	}
-
 }
